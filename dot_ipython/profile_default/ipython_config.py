@@ -359,8 +359,8 @@
 # c.InteractiveShell.automagic = True
 
 ## The part of the banner to be printed before the profile
-#  Default: "Python 3.8.10 (default, Nov 26 2021, 20:14:08) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.\n"
-# c.InteractiveShell.banner1 = "Python 3.8.10 (default, Nov 26 2021, 20:14:08) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.\n"
+#  Default: "Python 3.8.10 (default, Mar 15 2022, 12:22:08) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.\n"
+# c.InteractiveShell.banner1 = "Python 3.8.10 (default, Mar 15 2022, 12:22:08) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.\n"
 
 ## The part of the banner to be printed after the profile
 #  Default: ''
@@ -508,7 +508,7 @@
 
 ## The part of the banner to be printed before the profile
 #  See also: InteractiveShell.banner1
-# c.TerminalInteractiveShell.banner1 = "Python 3.8.10 (default, Nov 26 2021, 20:14:08) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.\n"
+# c.TerminalInteractiveShell.banner1 = "Python 3.8.10 (default, Mar 15 2022, 12:22:08) \nType 'copyright', 'credits' or 'license' for more information\nIPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.\n"
 
 ## The part of the banner to be printed after the profile
 #  See also: InteractiveShell.banner2
