@@ -12,11 +12,29 @@ Plug 'scrooloose/nerdtree'
 Plug 'mechatroner/rainbow_csv'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
 call plug#end()
 
+" Options
+set encoding=UTF-8
+set number
+
+filetype plugin indent on
+syntax on
+
 colorscheme onedark
+
+" coc.nvim
+let g:coc_global_extensions = [
+      \ 'coc-markdownlint',
+      \ 'coc-highlight',
+      \ 'coc-json',
+      \ 'coc-git',
+      \ 'coc-pyright',
+      \ 'coc-rust-analyzer'
+      \ ]
 
