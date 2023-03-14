@@ -2,5 +2,6 @@
 	gpgsign = true
 [core]
 	editor = nvim
+	excludesfile = ~/.gitignore_global
 [init]
 	defaultBranch = main
