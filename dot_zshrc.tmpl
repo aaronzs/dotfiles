@@ -112,7 +112,23 @@ export LANGUAGE=en_US.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+# cargo
+if [ -d "$HOME/.cargo/bin" ]; then
+  export PATH="$HOME/.cargo/bin:$PATH"
+fi
+# mojo
+if [ -d "$HOME/.modular" ]; then
+  export MODULAR_HOME="$HOME/.modular"
+  export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
+fi
+# rye
+if [ -e "$HOME/.rye/env" ]; then
+  export RYE_HOME="$HOME/.rye"
+  source "$RYE_HOME/env"
+fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -124,9 +140,6 @@ export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ls="lsd"
-
-{{ if eq .chezmoi.os "darwin" }}
-{{ end }}
 
 # starship
 eval "$(starship init zsh)"
